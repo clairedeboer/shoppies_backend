@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/movies', to: 'movies#index'
+  post '/movies', to: 'movies#create'
 
-  post '/user_movies', to: 'user_movies#create'
-  delete '/user_movies/:id', to: 'user_movies#destroy'
+  post '/nominations', to: 'user_movies#create'
+  delete '/nominations/:id', to: 'user_movies#destroy'
 end
