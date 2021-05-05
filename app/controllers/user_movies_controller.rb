@@ -1,4 +1,9 @@
 class UserMoviesController < ApplicationController
+  def index
+    user_movies = UserMovie.all
+    render json: user_movies.map{|user_movie| user_movie.movie}
+  end
+
   def create
     user_movie = UserMovie.create(user_movie_params)
     render json: user_movie
@@ -11,6 +16,6 @@ class UserMoviesController < ApplicationController
 
   private
   def user_movie_params
-    params.permit(:user_id, :movie_id, :nomination_status)
+    params.require(:user_movie).permit(:user_id, :movie_id, :nomination_status)
   end
 end
