@@ -1,24 +1,49 @@
-# README
+# Shoppies Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A RESTful API built in Rails that allows users to search OMDB's API and nominate movies. There is a [React frontend](https://github.com/clairedeboer/shoppies_frontend). 
 
-Things you may want to cover:
+The domain model is outlined below
 
-* Ruby version
+![Domain model](/shoppies_backend/public/domain_model.png "Domain Model")
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+Before you continue, make sure you have met the following requirements: 
 
-* Database creation
+* You have installed and are using Ruby 2.6.6
+* You have installed Rails 6.1.1
 
-* Database initialization
+## Developing Shoppies Locally
 
-* How to run the test suite
+To install Shoppies, follow these steps: 
 
-* Services (job queues, cache servers, search engines, etc.)
+Linux and macOS: 
+```
+gem install bundler
+bundle install
+rails db:migrate
+rails db:seed
+rails s
+```
 
-* Deployment instructions
+## Using Shoppies
 
-* ...
+To use Shoppies, follow these steps: 
+
+* Search movies by title
+* Nominate up to 5 movies
+* Remove movies from your nominations list
+
+## Deployment
+
+Shoppies is deployed via Heroku at: 
+
+ADD LINK
+
+To see an example of this app being used by a frontend single page applicaton: 
+
+ADD NETLIFY LINK
+
+## Contact
+
+If you want to contact me, you can reach me at claire.deboer@gmail.com
