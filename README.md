@@ -4,7 +4,7 @@ A RESTful API built in Rails that allows users to search OMDB's API and nominate
 
 The domain model is outlined below
 
-![Domain model](/shoppies_backend/public/domain_model.png "Domain Model")
+![Domain model](/public/domain_model.png "Domain Model")
 
 ## Prerequisites
 
