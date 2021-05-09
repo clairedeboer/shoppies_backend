@@ -38,11 +38,11 @@ To use Shoppies, follow these steps:
 
 Shoppies is deployed via Heroku at: 
 
-ADD LINK
+ https://rocky-retreat-72681.herokuapp.com
 
 To see an example of this app being used by a frontend single page applicaton: 
 
-ADD NETLIFY LINK
+https://zen-bell-153a5b.netlify.app/
 
 ## Contact
 
